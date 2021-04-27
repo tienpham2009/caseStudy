@@ -25,17 +25,16 @@ class Eagle {
     draw() {
         cvs.width = cvs.width;
 
-        ctx.drawImage(
-            this.img,
-            this.frameId * this.width,
-            0,
-            this.width,
-            this.height,
-            this.x,
-            this.y,
-            100,
-            100)
-
+            ctx.drawImage(
+                this.img,
+                this.frameId * this.width,
+                0,
+                this.width,
+                this.height,
+                this.x,
+                this.y,
+                100,
+                100)
     }
 
 
@@ -46,9 +45,10 @@ class Eagle {
 
     }
 
+
     moveRight() {
         this.x += this.speed;
-        if (this.x >= 600) {
+        if (this.x >= 500) {
             this.x = 0;
             this.y = Math.floor(Math.random() * 150);
         }
